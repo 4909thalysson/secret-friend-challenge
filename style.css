@@ -1,0 +1,125 @@
+/* 1. Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Estilos para a imagem de fundo */
+.imagemFundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+}
+
+/* 3. Container central */
+.container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 50px;
+    width: 130%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* 4. Estilos para o título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+/* 5. Estilos para o parágrafo */
+p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+/* 6. Estilos para o botão */
+button {
+    background-color: #E6582B;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #E6582B;
+}
+
+/* 7. Estilos para o input */
+input[type="text"] {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    text-align: center;
+    list-style: none;
+
+}
+
+/* Botão de adicionar amigo com cor personalizada */
+.button-add {
+    background-color: #82B1B4;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.button-add:hover {
+    background-color: #5e8e91;
+}
+
+/* Botão de sortear e reiniciar */
+.button-draw, .button-reset {
+    background-color: #E6582B;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+.button-draw:hover, .button-reset:hover {
+    background-color: #c1441a;
+}
+
+.name-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.name-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+}
+

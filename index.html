@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto</title>
+</head>
+<body>
+    <img class="imagemFundo" src="assets/pessoas-unir-as-maos-grupo-de-amigos-mantendo-as-maos-juntas.jpg" alt="pessoas__unindo as maos grupo de amigos mantendo as maos juntas">
+    <div class="container">
+        <h1 class="main-title">Amigo Secreto</h1>
+        <p class="descricao">Digite o nome dos seus amigos</p>
+        
+        <div class="input-wrapper">
+            <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+            <button class="button-add" type="button" onclick="adicionarAmigo()">Adicionar</button>
+        </div>
+        
+        <ul id="listaAmigos" class="name-list"></ul>
+        <div class="button-container">
+            <button class="button-draw" type="button" onclick="sortearAmigo()">Sortear amigo</button>
+            <button class="button-reset" type="button" onclick="reiniciarJogo()">Reiniciar</button>
+        </div>
+        <div id="resultado" class="result-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
